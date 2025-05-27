@@ -1,7 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-
+import routesSlice from './store/routes';
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    routesSlice,
+  },
 });
 
 // 从 store 本身推断出 `RootState` 和 `AppDispatch` 类型
